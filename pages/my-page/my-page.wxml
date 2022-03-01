@@ -1,0 +1,75 @@
+<view class='head head-height'>
+    <block>
+      <view class="userinfo">
+        <image class="userinfo-avatar" src="../../images/hasNoheader.png" mode="cover"></image>
+        <text class="userinfo-nickname">微信授权</text>
+      </view>
+      <button class="login-button head-height" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    </block>
+    <!-- <block wx:else>
+      <view class="userinfo">
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </view>
+    </block> -->
+</view>
+<view class="userName myPublic">
+    <span>
+       姓名:
+    </span>
+    <span>
+        {{userLists.userName}}
+    </span>
+</view>
+<view class="myLine" >
+</view>
+<view class="userBirthday myPublic">
+    <span>
+       生日:
+    </span>
+    <span>
+        {{userLists.userBirthday}}
+    </span>
+</view>
+<view class="myLine" >
+</view>
+<view class="userGender myPublic">
+    <span>
+       性别:
+    </span>
+    <span>
+        {{userLists.userGender}}
+    </span>
+</view>
+<view class="myLine" >
+</view>
+<view class="myPublic">
+    <span>
+       班级:
+    </span>
+    <span>
+        {{userLists.userClass}}
+    </span>
+</view>
+<view class="myLine" >
+</view>
+<view class="myPublic">
+    <span>
+       学号:
+    </span>
+    <span>
+        {{userLists.userStudentNumber}}
+    </span>
+</view>
+<view class="myLine" >
+</view>
+<view class="myPublic">
+    <span>
+       联系方式:
+    </span>
+    <span>
+        {{userLists.userPhone}}
+    </span>
+</view>
+<view class="myLine" >
+</view>

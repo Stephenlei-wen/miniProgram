@@ -1,0 +1,200 @@
+<view class="del-userInfo" hover-class="none" hover-stop-propagation="false">
+    <view class="userinfoTitle">
+        个人信息
+    </view>
+    <view class="myLine" >
+    </view>
+    <view class="userName myPublic">
+        <span>
+        姓名:
+        </span>
+        <span>
+            {{userLists.userName}}
+        </span>
+    </view>
+    <view class="myLine" >
+    </view>
+    <view class="userBirthday myPublic">
+        <span>
+        生日:
+        </span>
+        <span>
+            {{userLists.userBirthday}}
+        </span>
+    </view>
+    <view class="myLine" >
+    </view>
+    <view class="userGender myPublic">
+        <span>
+        性别:
+        </span>
+        <span>
+            {{userLists.userGender}}
+        </span>
+    </view>
+    <view class="myLine" >
+    </view>
+    <view class="myPublic">
+        <span>
+        班级:
+        </span>
+        <span>
+            {{userLists.userClass}}
+        </span>
+    </view>
+    <view class="myLine" >
+    </view>
+    <view class="myPublic">
+        <span>
+        学号:
+        </span>
+        <span>
+            {{userLists.userStudentNumber}}
+        </span>
+    </view>
+    <view class="myLine" >
+    </view>
+    <view class="myPublic">
+        <span>
+        联系方式:
+        </span>
+        <span>
+            {{userLists.userPhone}}
+        </span>
+    </view>
+    <view class="myLine" >
+    </view>
+</view>
+<view>
+    <view class="userinfoTitle">
+        心里健康状态
+    </view>
+    <view class="myLine" >
+    </view>
+    <view class="userName myPublic">
+        <span>
+        躯体化:
+        </span>
+        <span>
+            {{healthStatus.describtion}}
+        </span>
+    </view>
+    <view class="myLine" >
+    </view>
+    <view class="userBirthday myPublic">
+        <span>
+        强迫症:
+        </span>
+        <span>
+            {{healthStatus.describtion}}
+        </span>
+    </view>
+    <view class="myLine" >
+    </view>
+    <view class="userName myPublic">
+        <span>
+        精神病性:
+        </span>
+        <span>
+            {{healthStatus.describtion}}
+        </span>
+    </view>
+    <view class="myLine" >
+    </view>
+    <view class="userName myPublic">
+        <span>
+        抑郁:
+        </span>
+        <span>
+            {{healthStatus.describtion}}
+        </span>
+    </view>
+    <view class="myLine" >
+    </view>
+    <view class="userName myPublic">
+        <span>
+        焦虑:
+        </span>
+        <span>
+            {{healthStatus.describtion}}
+        </span>
+    </view>
+    <view class="myLine" >
+    </view>
+    <view class="userName myPublic">
+        <span>
+        敌对:
+        </span>
+        <span>
+            {{healthStatus.describtion}}
+        </span>
+    </view>
+    <view class="myLine" >
+    </view>
+    <view class="userName myPublic">
+        <span>
+        恐怖:
+        </span>
+        <span>
+            {{healthStatus.describtion}}
+        </span>
+    </view>
+    <view class="myLine" >
+    </view>
+    <view class="userName myPublic">
+        <span>
+        偏执:
+        </span>
+        <span>
+            障碍
+        </span>
+    </view>
+    <view class="myLine" >
+    </view>
+    <view class="userName myPublic">
+        <span>
+        人际关系敏感度:
+        </span>
+        <span>
+            不良
+        </span>
+    </view>
+    <view class="myLine" >
+    </view>
+</view>
+    <view class="userinfoTitle">
+        结果
+    </view>
+    <view class="myLine" >
+    </view>
+    <view class="userName myPublic">
+        <span>
+        组织单位:
+        </span>
+        <span>
+            公司名称
+        </span>
+    </view>
+    <view class="myLine" >
+    </view>
+    <view class="userName myPublic">
+        <span>
+        测评时间:
+        </span>
+        <span>
+            2021年11月10号
+        </span>
+    </view>
+    <view class="myLine" >
+    </view>
+    <view class="userName myPublic">
+        <span>
+        评论:
+        </span>
+        <span>
+            综合评论
+        </span>
+    </view>
+    <view class="myLine" >
+    </view>
+

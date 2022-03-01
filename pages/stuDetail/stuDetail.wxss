@@ -1,0 +1,23 @@
+.myPublic {
+  display: flex;
+  align-items: center;
+  padding-left: 48rpx;
+  padding-right: 48rpx;
+  height: 80rpx;
+  justify-content: space-between;
+  font-size: 30rpx;
+}
+.myLine {
+  height: 1px;
+  background-color: #eeeeee;
+}
+.userinfoTitle {
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40rpx;
+}
+.result{
+
+}

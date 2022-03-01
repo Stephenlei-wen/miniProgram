@@ -1,0 +1,17 @@
+.numberCode {
+  display: flex;
+  margin-top: 40rpx;
+}
+.allAuthorize {
+  padding: 50rpx;
+}
+.loginAuthorize {
+  margin-top: 40rpx;
+}
+.chexbox {
+  margin-left: 20rpx;
+}
+.myIdentity {
+  height: 60rpx;
+  padding-bottom: 20rpx;
+}

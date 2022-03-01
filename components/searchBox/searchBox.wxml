@@ -1,0 +1,5 @@
+<view class="searchBox">
+    <view class="navigator" >
+        <input value="{{inputValue}}" type="text" placeholder="请输入学生姓名" bindinput="bindinput" bindconfirm="search" ></input>
+    </view>
+</view>

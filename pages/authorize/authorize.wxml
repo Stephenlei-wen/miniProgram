@@ -1,0 +1,20 @@
+<form class=""  bindsubmit="bindsubmit" >
+    <view class="allAuthorize" hover-stop-propagation="false">
+    <view class="myIdentity">
+        你的身份:
+    </view>
+    <radio-group bindchange="bandleChange" name="identity">
+        <radio color="#18D0AC" value="0" checked> 同学</radio>
+        <radio color="#18D0AC" value="1" class="chexbox"> 老师</radio>
+    </radio-group>
+    <!-- <view>您选中的是:{{ identity }}</view> -->
+    <view wx:if="{{identity==='1'?true:false}}" class="numberCode" >
+        <view class="weui-cell weui-cell_input">
+            <input name="identyCode" class="weui-input" type="number" placeholder="请输入验证码" bindblur="bindblur"/>
+        </view>
+        <button class="mini-btn" type="primary"  size="mini">验证身份</button>
+    </view>
+    <button wx:if="{{(verifyed===1||identity==='0')?true:false}}"  class="loginAuthorize" bindtap='onLogin' form-type="submit" type="primary" >登录</button>
+</view>
+</form>
+

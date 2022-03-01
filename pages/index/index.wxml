@@ -1,0 +1,24 @@
+
+<searchBox></searchBox>
+<view class="swiper">
+  <swiper autoplay interval="2000" circular="true" indicator-dots>
+    <swiper-item><image src="/images/swiper01.jpg"></image></swiper-item>
+    <swiper-item><image src="/images/swiper02.jpg"></image></swiper-item>
+    <swiper-item><image src="/images/swiper03.jpg"></image></swiper-item>
+  </swiper>
+</view>
+<view class="menuBar">
+ <view class="paper">
+  <navigator  url="pages/questionnaire/questionnaire" bindtap='onpaper'>
+    <image class="" src="/images/dj.png"  mode="widthFix"></image>
+  </navigator>
+  <span>问卷</span>
+</view>
+<view class="score">
+  <navigator  url="pages/studyScore/studyScore" bindtap='onscore'>
+    <image class="" src="/images/score.png"  mode="widthFix"></image>
+  </navigator>
+  <span>学生成绩</span>
+</view>
+</view>
+

@@ -1,0 +1,58 @@
+<form class=""  bindsubmit="bindsubmit" bindreset="">
+    <view class="userName myPublic">
+        <span>
+        姓名:
+        </span>
+        <view class="" >
+            <input name="Name" class="" type="text" placeholder="请输入姓名" />
+        </view>
+    </view>
+    <view class="myLine" ></view>
+    <view class="userBirthday myPublic">
+        <span>
+        生日:
+        </span>
+        <view class="">
+            <input name="Birthday" class="" type="text" placeholder="格式:年.月.日" />
+        </view>
+    </view>
+    <view class="myLine" ></view>
+    <view class="myPublic section">
+        <view class="section__title">性别:</view>
+        <radio-group bindchange="bandleChange" name="Sex">
+        <label><radio value="男" checked/>男</label>
+        <label><radio value="女" />女</label>
+        </radio-group>
+    </view>
+    <view class="myLine" ></view>
+    <view class="myPublic">
+        <span>
+        班级:
+        </span>
+        <view class="" hover-class="none" hover-stop-propagation="false">
+            <input name="Class" type="text" placeholder="请输入班级"/>
+        </view>
+    </view>
+    <view class="myLine" ></view>
+    <view class="myPublic">
+        <span>
+        学号:
+        </span>
+        <view class="" hover-class="none" hover-stop-propagation="false">
+            <input name="StudentID" type="number" placeholder="请输入学号"/>
+        </view>
+    </view>
+    <view class="myLine" ></view>
+    <view class="myPublic">
+        <span>
+        联系方式:
+        </span>
+        <view class="" hover-class="none" hover-stop-propagation="false">
+            <input type="number" name="Number" placeholder="请输入电话"/>
+        </view>
+    </view>
+    <view class="myLine" ></view>
+    <view class="loginBtn" hover-class="none" hover-stop-propagation="false">
+        <button  form-type="submit" type="primary">登录</button>
+    </view>
+</form>

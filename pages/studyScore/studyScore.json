@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "select":"../../components/select/select",
+    "searchBox":"../../components/searchBox/searchBox"
+  },
+  "navigationBarTitleText": "学生列表 "
+}

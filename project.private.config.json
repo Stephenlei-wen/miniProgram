@@ -1,0 +1,66 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/my-page/my-page",
+          "pathName": "pages/my-page/my-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/stuDetail/stuDetail",
+          "pathName": "pages/stuDetail/stuDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/stuDetail/stuDetail",
+          "pathName": "pages/studyScire/studyScire",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/studyScore/studyScore",
+          "pathName": "pages/studyScore/studyScore",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/questionnaire/questionnaire",
+          "pathName": "pages/questionnaire/questionnaire",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/loginUserInfo/loginUserInfo",
+          "pathName": "pages/loginUserInfo/loginUserInfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/authorize/authorize",
+          "pathName": "pages/authorize/authorize",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

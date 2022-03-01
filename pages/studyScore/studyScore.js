@@ -1,0 +1,225 @@
+// pages/studyScore/studyScore.js
+Page({
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    options:[{id:'1',name:'河北大学'},{id:'3',name:'保定大学'}],
+    studentList:{
+      total:20,
+      nameList:[
+      {name:"张三",schooId:"0"},
+      {name:"张水电费呢",schooId:"1"},
+      {name:"张三",schooId:"1"},
+      {name:"张三",schooId:"1"},
+      {name:"张三",schooId:"1"},
+      {name:"张三",schooId:"1"},
+      {name:"张三",schooId:"1"},
+      {name:"张年后",schooId:"1"},
+      {name:"张三",schooId:"2"},
+      {name:"张三",schooId:"2"},
+      {name:"张三",schooId:"2"},
+      {name:"张三",schooId:"2"},
+      {name:"张三",schooId:"2"},
+      {name:"张三",schooId:"2"},
+      {name:"你好",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"溜溜",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"溜溜",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"溜溜",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"溜溜",schooId:"3"},
+      {name:"张三",schooId:"3"},
+      {name:"你你你你",schooId:"3"},
+      {name:"张三",schooId:"3"}
+      ]
+    }
+  },
+  search(e){
+    this.setData({
+      ["studentList.nameList"]: [
+        {name:"张三",schooId:"0"},
+        {name:"张水电费呢",schooId:"1"},
+        {name:"张三",schooId:"1"},
+        {name:"张三",schooId:"1"},
+        {name:"张三",schooId:"1"},
+        {name:"张三",schooId:"1"},
+        {name:"张三",schooId:"1"},
+        {name:"张年后",schooId:"1"},
+        {name:"张三",schooId:"2"},
+        {name:"张三",schooId:"2"},
+        {name:"张三",schooId:"2"},
+        {name:"张三",schooId:"2"},
+        {name:"张三",schooId:"2"},
+        {name:"张三",schooId:"2"},
+        {name:"你好",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"溜溜",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"溜溜",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"溜溜",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"溜溜",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"你你你你",schooId:"3"},
+        {name:"张三",schooId:"3"}
+        ]
+    })
+    var that  = this
+    console.log(e.detail.value,"穿过来的值");
+    let inputValue = e.detail.value
+    let inputValues = inputValue.toString()
+    //
+    var nameList = that.data.studentList.nameList
+    let studentName = nameList.filter(item=>item.name === inputValue)
+      that.setData({
+        ["studentList.nameList"]: studentName
+      });
+  },
+  change(e){
+    this.setData({
+      ["studentList.nameList"]: [
+        {name:"张三",schooId:"0"},
+        {name:"张水电费呢",schooId:"1"},
+        {name:"张三",schooId:"1"},
+        {name:"张三",schooId:"1"},
+        {name:"张三",schooId:"1"},
+        {name:"张三",schooId:"1"},
+        {name:"张三",schooId:"1"},
+        {name:"张年后",schooId:"1"},
+        {name:"张三",schooId:"2"},
+        {name:"张三",schooId:"2"},
+        {name:"张三",schooId:"2"},
+        {name:"张三",schooId:"2"},
+        {name:"张三",schooId:"2"},
+        {name:"张三",schooId:"2"},
+        {name:"你好",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"溜溜",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"溜溜",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"溜溜",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"溜溜",schooId:"3"},
+        {name:"张三",schooId:"3"},
+        {name:"你你你你",schooId:"3"},
+        {name:"张三",schooId:"3"}
+        ]
+    })
+    console.log(this.data.studentList.arrayList,"值");
+    var that = this
+    var schoolId = e.detail.id
+    var aaaa = schoolId.toString ()
+    var aaa =  that.data.studentList.nameList
+    var arrayList = aaa.filter(item=>item.schooId === aaaa)
+    that.setData({
+      ["studentList.nameList"]: arrayList
+    });
+    console.log(that.data.studentList.nameList,'选中某一值传过来的值');
+  },
+  onDetail(e){
+    console.log(e.target.dataset.name);
+    // let studentName = e.target.dataset.name
+    let studentName = JSON.stringify(e.target.dataset.name)
+    wx.navigateTo({
+      url: '/pages/stuDetail/stuDetail?studentName='+studentName,
+    })
+  }
+})

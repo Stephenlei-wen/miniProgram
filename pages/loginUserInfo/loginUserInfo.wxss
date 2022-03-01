@@ -1,0 +1,16 @@
+.myPublic {
+  display: flex;
+  align-items: center;
+  padding-left: 48rpx;
+  padding-right: 48rpx;
+  height: 80rpx;
+  justify-content: space-between;
+  font-size: 30rpx;
+}
+.myLine {
+  height: 1px;
+  background-color: #eeeeee;
+}
+.section {
+  display: flex;
+}

@@ -1,0 +1,12 @@
+<view class="studyScore">
+    <searchBox bind:search="search"/>
+    <select options="{{options}}" bind:change="change"/>
+    <view class="">
+        <view wx:for="{{studentList.nameList}}"  data-name="{{item.name}}" wx:key="index"  bindtap='onDetail' class="myPublic">
+            <span>
+            {{item.name}}
+            </span>
+        </view>
+        <view class="myLine" ></view>
+    </view>
+</view>

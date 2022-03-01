@@ -1,0 +1,38 @@
+   <view class="questionCard">
+       <view class="" wx:for="{{questionList}}" wx:key="questionList">
+       <view bindtap='goIndex' data-index="{{index}}" class="{{index==idx?'_left':'left'}} questionCardItem">{{item.num}}</view>
+   </view>
+   </view>
+<view class='container'>
+    <swiper class='sheet' current='{{id}}'>
+      <block wx:for="{{qnaire}}" wx:key="id">
+        <swiper-item>
+          <form bindsubmit='submit'>
+            <view class='naire'>
+              <view class='question'>{{item.question}}</view>
+              <!-- view class='border' /-->
+              <radio-group class='radio-group' data-questionId="{{item.id}}" name='answer' bindchange='radioChange'>
+                <label class='radio'><radio value="0" color='#fcbe39' />{{item.option.a}}</label>
+                <label class='radio'><radio value="1" color='#fcbe39' />{{item.option.b}}</label>
+                <label class='radio'><radio value="2" color='#fcbe39' />{{item.option.c}}</label>
+                <label class='radio'><radio value="3" color='#fcbe39' />{{item.option.d}}</label>
+                <label class='radio'><radio value="4" color='#fcbe39' />{{item.option.e}}</label>
+              </radio-group>
+            </view>
+            <view class='button-group'>
+              <button class='button' hover-class='none' bindtap='lastq' disabled='{{id==0}}'>上一题</button>
+              <button wx:if="{{id<89}}" class='button' hover-class='none' bindtap='nextq'>下一题</button>
+              <button wx:else class='button' hover-class='none' form-type='submit' bindtap='formSubmit'>提交</button>
+            </view>
+            <view class='id'>{{id+1}}/{{qnaire.length}}</view>
+          </form>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+
+
+
+
+
